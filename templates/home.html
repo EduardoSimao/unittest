@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <title>{{ perfil.nome }}</title> 
+
+  </head>
+  <body>
+    
+    <div class="container">
+            <div class="jumbotron">
+                <img src="{{ perfil.foto }}" alt="{{ perfil.nome }}" class="img-circle" width="150">
+              
+                <h1>{{ perfil.nome }}</h1>
+                <p>{{ perfil.descricao }}</p>
+                <p><a class="btn btn-primary btn-lg" href="{{ perfil.url }}" role="button">Me siga no {{ perfil.nome_url }}</a></p>
+            </div>
+          </div>
+  </body>
+</html>
